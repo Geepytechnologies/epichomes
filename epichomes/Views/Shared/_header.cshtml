@@ -1,0 +1,36 @@
+﻿@page
+@model epichomes.Views.Shared._headerModel
+@{
+}
+
+<link rel="stylesheet" href="~/css/header.css" asp-append-version="true" />
+
+<header>
+    <nav class="headercon">
+            <a class="myheadertext" asp-area="" asp-controller="Home" asp-action="Index">Epichomes</a>
+                <ul class="mymenu">
+                    <li>
+                        <a class="" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li>
+                        <a class="" asp-area="" asp-controller="About" asp-action="Index">About</a>
+                    </li>
+                    <li>
+                        <a class="" asp-area="" asp-controller="Rooms" asp-action="Index">Rooms</a>
+                    </li>
+                    <li>
+                        <a class="" asp-area="" asp-controller="Restaurant" asp-action="Index">Restaurant</a>
+                    </li>
+                    <li>
+                        <a class="" asp-area="" asp-controller="Contacts" asp-action="Index">Contacts</a>
+                    </li>
+                </ul>
+
+            <div class="menunum">
+                <p>+1 002 132 444</p>
+        <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+
+    </nav>
+</header>
+
