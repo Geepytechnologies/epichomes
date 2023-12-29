@@ -2,6 +2,12 @@ html {
   font-size: 14px;
 }
 
+:root {
+    --primary: #9b999a;
+    --darklight: #757b82;
+    --darklight2: #757b82;
+}
+
 body{
     box-sizing: border-box;
     margin:0;
@@ -37,5 +43,5 @@ a {
 
 
 body {
-  margin-bottom: 60px;
 }
+

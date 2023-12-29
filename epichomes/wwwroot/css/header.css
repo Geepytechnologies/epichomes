@@ -3,11 +3,13 @@
 
 header{
     background-image: url("../images/apartment.jpg");
-    height: 500px;
+    height: 450px;
     background-size: cover;
     background-position: center;
     width: 100%;
     color: #fff;
+    display: flex;
+    flex-direction: column;
 }
 
 .myheadertext {
@@ -23,13 +25,17 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 0 5px;
+    height: 80px;
 }
 
 .mymenu {
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: center;
     gap:20px;
+}
+.menuicon{
+    display: flex;
 }
 
 .menunum {
@@ -37,9 +43,87 @@ header{
     flex-direction: row;
     align-items: center;
 }
+.menunum p:first-child{
+  display: none;
+}
 
 .mymenu li a{
     color: #fff
+}
+.headercontent {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+.contentcon{
+    width: 80%;
+}
+.bookingcon{
+    display:none;
+    align-items:center;
+    justify-content:center;
+    width: 100%;
+}
+.booking {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #fff;
+    color: #393f47;
+    width: 80%;
+    border-radius: 12px;
+    position: relative;
+}
+.slogan{
+    font-family: Poppins;
+    text-align: center;
+    font-size: 1.8rem;
+}
+.c2a{
+    font-family: Lato;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.datepickerinput {
+    outline: none;
+    border: none;
+    color: #393f47;
+    font-weight: 400;
+    font-family: 'Times New Roman';
+}
+
+/*sm*/
+@media screen and (min-width: 640px) {
+}
+/*md*/
+@media screen and (min-width: 768px) {
+    .mymenu{
+        display: flex;
+    }
+    .menuicon{
+        display: none;
+    }
+    .menunum p:first-child{
+        display: flex;
+    }
+    .slogan{
+        font-size: 2rem;
+    }
+    .bookingcon{
+        display: flex;
+    }
+    .c2a{
+        font-size: 1.2rem;
+    }
+}
+/*lg*/
+@media screen and (min-width: 1024px) {
+}
+/*xl*/
+@media screen and (min-width: 1280px) {
 }
 
 

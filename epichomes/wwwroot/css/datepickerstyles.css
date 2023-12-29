@@ -1,0 +1,74 @@
+﻿.ui-datepicker.ui-widget.ui-widget-content {
+    border: none;
+}
+
+.ui-datepicker {
+    width: 17em;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.ui-datepicker-month {
+    color: black;
+    font-family: Montserrat;
+}
+
+.ui-datepicker-year {
+    color: black;
+    font-family: Montserrat;
+}
+/* Customize header background color */
+.ui-datepicker-header {
+    background-color: #fff;
+    color: var(--darklight2);
+    border: none;
+}
+
+
+..ui-datepicker td.ui-datepicker-other-month {
+    color: #999; /* Set the color for non-current days */
+    background-color: red;
+    /* Add any additional styles for non-current days */
+}
+
+.ui-datepicker td.ui-datepicker-today a.ui-state-default {
+    color: #aca39e;
+}
+
+.ui-datepicker td.ui-datepicker-current-day a.ui-state-active {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin: auto auto;
+    background-color: #aca39e; /* Replace with your desired background color */
+    color: #fff; /* Replace with your desired text color */
+}
+
+/* Customize day cell background color */
+.ui-datepicker-calendar tbody tr td {
+}
+
+.ui-datepicker-calendar tbody td a.ui-state-default {
+    color: var(--darklight2);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+}
+
+.ui-datepicker-calendar tbody tr td.ui-datepicker-unselectable.ui-state-disabled span {
+    color: var(--darklight2);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+}

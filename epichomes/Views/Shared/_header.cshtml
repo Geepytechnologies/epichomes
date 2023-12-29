@@ -4,33 +4,64 @@
 }
 
 <link rel="stylesheet" href="~/css/header.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/datepickerstyles.css" asp-append-version="true" />
 
 <header>
     <nav class="headercon">
             <a class="myheadertext" asp-area="" asp-controller="Home" asp-action="Index">Epichomes</a>
-                <ul class="mymenu">
-                    <li>
-                        <a class="" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                    </li>
-                    <li>
-                        <a class="" asp-area="" asp-controller="About" asp-action="Index">About</a>
-                    </li>
-                    <li>
-                        <a class="" asp-area="" asp-controller="Rooms" asp-action="Index">Rooms</a>
-                    </li>
-                    <li>
-                        <a class="" asp-area="" asp-controller="Restaurant" asp-action="Index">Restaurant</a>
-                    </li>
-                    <li>
-                        <a class="" asp-area="" asp-controller="Contacts" asp-action="Index">Contacts</a>
-                    </li>
-                </ul>
-
+            <ul class="mymenu">
+                <li>
+                    <a class="" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+                <li>
+                    <a class="" asp-area="" asp-controller="About" asp-action="Index">About</a>
+                </li>
+                <li>
+                    <a class="" asp-area="" asp-controller="Rooms" asp-action="Index">Rooms</a>
+                </li>
+                <li>
+                    <a class="" asp-area="" asp-controller="Restaurant" asp-action="Index">Restaurant</a>
+                </li>
+                <li>
+                    <a class="" asp-area="" asp-controller="Contacts" asp-action="Index">Contacts</a>
+                </li>
+            </ul>
             <div class="menunum">
                 <p>+1 002 132 444</p>
-        <i class="fa fa-bars" aria-hidden="true"></i>
+                <div class="menuicon">
+
+                <i class="fa fa-bars menuicon" aria-hidden="true"></i>
+                </div>
             </div>
 
     </nav>
+    <div class="headercontent">
+        <div class="contentcon">
+            <h1 class="slogan">Beyond Hospitality, It's a Lifestyle.</h1>
+            <h2 class="c2a">Find your perfect stay with ease and explore a wide range of rooms. Book your Ideal gateway to Luxury </h2>
+
+        </div>
+        <div class="bookingcon">
+            <div class="booking">
+                <div class="bookingoption">
+                    <p>Check In <i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                    <input class="datepickerinput" type="text" id="datepicker">
+
+                </div>
+                <div class="bookingoption">
+                    <p>Check Out <i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                    <input class="datepickerinput" type="text" id="datepicker2">
+                </div>
+                <div class="bookingoption">
+                    <p>Persons <i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                    <p>1 person</p>
+                </div>
+                <div class="book">
+                    Book Now
+                </div>
+            </div>
+        </div>
+
+    </div>
 </header>
 
