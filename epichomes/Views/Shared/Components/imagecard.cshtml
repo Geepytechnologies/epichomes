@@ -1,0 +1,95 @@
+﻿@page
+@model epichomes.Views.Shared.Components.imagecardModel
+@{
+    var rating = 4;
+}
+
+<style>
+  .cardcontainer{
+      display: flex;
+      flex-direction:column;
+      width: 250px;
+      height: 300px;
+      border-radius: 10px;
+      border: 1px solid #e8e8e8;
+  }
+  img{
+      width: 100%;
+      height: 200px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+  }
+  .ratingcon i{
+      color: gold;
+  }
+  .ratingcon{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5px;
+  }
+  .content{
+      flex: 1;
+  }
+</style>
+
+
+<div class="cardcontainer">
+    <img src="/images/apartment.jpg" alt="" />
+    <div class="content">
+        <p>Deluxe Room</p>
+        <div>
+            @switch (rating)
+            {
+                case 1:
+                    <div class="ratingcon">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    break;
+                case 2:
+                    <div class="ratingcon">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    break;
+                case 3:
+                    <div class="ratingcon">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    break;
+                    case 4:
+                    <div class="ratingcon">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    break;
+                    case 5:
+                    <div class="ratingcon">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    
+                    </div>
+                    break;
+            
+            }
+        </div>
+        <p>Sao Francisco</p>
+    </div>
+</div>

@@ -16,9 +16,11 @@
 
         public ICollection<Image> Images { get; set; } = new List<Image>();
 
-        public string Price { get; set; }
-        
-        
+        public string? Price { get; set; }
+
+        public string? Location { get; set; }
+
+
         public RoomType? RoomType { get; set;}
 
         public bool RoomBooked { get; set; }

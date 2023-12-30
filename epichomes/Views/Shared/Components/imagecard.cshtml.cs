@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace epichomes.Views.Shared
+namespace epichomes.Views.Shared.Components
 {
-    public class _headerModel : PageModel
+    public class imagecardModel : PageModel
     {
         public void OnGet()
         {

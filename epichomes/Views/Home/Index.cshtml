@@ -1,12 +1,61 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-@await Html.PartialAsync("_header")
+<style>
+    .subscription-input{
+        border: none;
+        outline: none;
+        background-color: #fff;
+        color: #000;
+        padding: 10px 15px;
+    }
+    .subscribe-btn{
+        color: #fff;
+        padding: 10px 15px;
+        background-color: cadetblue;
+    }
+    .subscribe-con{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+    }
+    .subscribe-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sub{
+        background-color: var(--darklight2);
+    }
+</style>
 
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="">
+    <div>
+    <h1>Explore Amazing Comfort</h1>
+    @await Html.PartialAsync("components/imagecard")
+
+    </div> 
+    <div>
+    <h1>Trending Locations</h1>
+    @await Html.PartialAsync("components/imagecard")
+
+    </div>
+    <div>
+        <h2>FAQs</h2>
+    </div>
+    <div class="sub">
+        <div class="subscribe-box">
+            <p>Save time, Save money</p>
+            <p>Sign Up, we'll send the best deals to you.</p>
+            <div class="subscribe-con">
+                <input placeholder="Your Email Address" class="subscription-input" />
+                <div class="subscribe-btn">Subscribe</div>
+            </div>
+        </div>
+    </div>
 </div>
 
 

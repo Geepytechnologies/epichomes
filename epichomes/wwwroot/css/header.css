@@ -70,7 +70,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 10px 20px;
     background-color: #fff;
     color: #393f47;
     width: 80%;
@@ -93,6 +93,34 @@ header{
     color: #393f47;
     font-weight: 400;
     font-family: 'Times New Roman';
+}
+.persons {
+    outline: none;
+    border: none;
+    color: #393f47;
+    font-weight: 400;
+    font-family: 'Times New Roman';
+}
+.persons option {
+    outline: none;
+    border: none;
+    color: #393f47;
+    font-weight: 400;
+    font-family: 'Times New Roman';
+}
+.book {
+    background-color: var(--darklight2);
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+.bookingselection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
 }
 
 /*sm*/
